@@ -124,78 +124,228 @@ const Index = () => {
         </div>
 
         {/* Feature Breakdown */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          <Card className="shadow-card hover:shadow-gold-glow/20 transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-primary">User Authentication</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Complete signup, login, and logout system with session management. 
-                Dynamic navigation updates based on authentication status.
-              </p>
-            </CardContent>
-          </Card>
+        <div className="space-y-8 mb-12">
+          <div>
+            <h3 className="text-2xl font-bold font-heading text-primary mb-6">
+              Informational Pages & Application-Wide Features
+            </h3>
+            <p className="text-foreground mb-4">
+              The application provides a welcoming experience for new users and is built on a responsive, accessible foundation.
+            </p>
+            
+            <div className="space-y-4">
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Homepage & About Page</h4>
+                  <p className="text-muted-foreground mb-3">
+                    The Homepage serves as the main entry point, while the About Page offers a clear summary of the application's purpose and functionality.
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #1: "As a user, I want to see information about the GT Movies Store so I can learn more about the app and its purpose."
+                  </p>
+                </CardContent>
+              </Card>
 
-          <Card className="shadow-card hover:shadow-gold-glow/20 transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-primary">Movie Catalog & Search</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Browse comprehensive movie catalog with dynamic search functionality. 
-                Filter movies by title with real-time results.
-              </p>
-            </CardContent>
-          </Card>
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Responsive GUI</h4>
+                  <p className="text-muted-foreground mb-3">
+                    The entire front end was built using the Bootstrap framework, ensuring that all pages and features are fully responsive and provide an optimal viewing experience across a wide range of devices.
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #16: "As a user, I want the GT Movies Store to feature a responsive Graphical User Interface (GUI) so I can access it through different devices with diverse screen sizes."
+                  </p>
+                </CardContent>
+              </Card>
 
-          <Card className="shadow-card hover:shadow-gold-glow/20 transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-primary">Review System</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Full CRUD operations for movie reviews. Users can create, edit, and 
-                delete their own reviews with proper permissions.
-              </p>
-            </CardContent>
-          </Card>
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Web Deployment</h4>
+                  <p className="text-muted-foreground mb-3">
+                    The application has been deployed to a public web server on PythonAnywhere.
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #15: "As a user, I want to be able to access the GT Movies Store from any desktop using a web browser, so I can use the app anywhere with an internet connection."
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
 
-          <Card className="shadow-card hover:shadow-gold-glow/20 transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-primary">Shopping Cart</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Persistent shopping cart using Django sessions. Add quantities, 
-                manage items, and proceed to checkout seamlessly.
-              </p>
-            </CardContent>
-          </Card>
+          <div>
+            <h3 className="text-2xl font-bold font-heading text-primary mb-6">
+              User Authentication
+            </h3>
+            <p className="text-foreground mb-4">
+              A complete authentication system handles user registration and access control.
+            </p>
+            
+            <Card className="shadow-card">
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-accent mb-2">Signup & Login Pages</h4>
+                <p className="text-muted-foreground mb-3">
+                  The Signup Page allows new users to create an account. The Login Page allows registered users to securely authenticate, which in turn grants them access to personalized features like purchasing and writing reviews.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #2: "As a user, I want to register an account so that I can access the GT Movies Store."
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This also fulfills User Story #3: "As a registered user, I want to log in so that I can access my account data."
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
 
-          <Card className="shadow-card hover:shadow-gold-glow/20 transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-primary">Order Management</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Complete order history tracking. Users can view all past purchases 
-                with detailed item breakdown and timestamps.
-              </p>
-            </CardContent>
-          </Card>
+          <div>
+            <h3 className="text-2xl font-bold font-heading text-primary mb-6">
+              Movie Catalog & Discovery
+            </h3>
+            <p className="text-foreground mb-4">
+              The core of the application is the user's ability to browse and learn about movies. 🎬
+            </p>
+            
+            <div className="space-y-4">
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Movie Listings Page</h4>
+                  <p className="text-muted-foreground mb-3">
+                    This page functions as the main catalog, displaying all available movies from the database. It includes a prominent search bar that allows users to filter the catalog by movie title.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-sm text-primary font-medium">
+                      This fulfills User Story #4: "As a user, I want to be able to view the list of movies available in the GT Movies Store so I can make my selections."
+                    </p>
+                    <p className="text-sm text-primary font-medium">
+                      This also fulfills User Story #5: "As a user, I want to search movies per title so I can make my selections."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
 
-          <Card className="shadow-card hover:shadow-gold-glow/20 transition-shadow">
-            <CardHeader>
-              <CardTitle className="text-primary">Admin Panel</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                Django's powerful built-in admin interface for full CRUD operations 
-                on all models - users, movies, reviews, and orders.
-              </p>
-            </CardContent>
-          </Card>
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Movie Detail Page</h4>
+                  <p className="text-muted-foreground mb-3">
+                    Clicking a movie from the catalog leads to its detail page. This page presents comprehensive information about the film (price, description, image) and displays all user-submitted reviews.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-sm text-primary font-medium">
+                      This fulfills User Story #13: "As a user, I want to see the details of a movie so I have the information to make my choices."
+                    </p>
+                    <p className="text-sm text-primary font-medium">
+                      This also fulfills User Story #12: "As a user, I want to see the reviews of a movie so I can have information on whether I should purchase a movie or not."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold font-heading text-primary mb-6">
+              E-commerce Workflow
+            </h3>
+            <p className="text-foreground mb-4">
+              The application features a complete e-commerce experience, from cart management to purchase history.
+            </p>
+            
+            <div className="space-y-4">
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Shopping Cart Functionality</h4>
+                  <p className="text-muted-foreground mb-3">
+                    On the movie detail page, users can add items to their personal Shopping Cart. The dedicated Cart Page lists all selected items and their total price, and includes a button to clear the cart's contents.
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-sm text-primary font-medium">
+                      This fulfills User Story #7: "As a user, I want to be able to add one or more items of a movie to my shopping cart so I can purchase them in the future."
+                    </p>
+                    <p className="text-sm text-primary font-medium">
+                      This also fulfills User Story #6: "As a user, I want to be able to access a shopping cart so I can list all movie items I am willing to purchase."
+                    </p>
+                    <p className="text-sm text-primary font-medium">
+                      This also fulfills User Story #9: "As a user, I want to be able to remove all movie items from my shopping cart so I can have flexibility on what I purchase or not."
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="shadow-card">
+                <CardContent className="p-6">
+                  <h4 className="font-semibold text-accent mb-2">Order History Page</h4>
+                  <p className="text-muted-foreground mb-3">
+                    For logged-in users, the "Orders" page provides a complete history of all past purchases, allowing them to track their expenses and previous selections.
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #14: "As a user, I want to see a list of my orders so I can track what I have purchased and my expenses."
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold font-heading text-primary mb-6">
+              User Content Management (Reviews)
+            </h3>
+            <p className="text-foreground mb-4">
+              Logged-in users can contribute their own content to the site through a full review management system.
+            </p>
+            
+            <Card className="shadow-card">
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-accent mb-2">Review CRUD Operations</h4>
+                <p className="text-muted-foreground mb-3">
+                  On the movie detail page, authenticated users can create reviews using a dedicated form. For reviews they have personally written, "Edit" and "Delete" buttons are conditionally rendered, giving them full control over their content.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #8: "As a user, I want to create movie reviews so others can use my insights when searching for movies."
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This also fulfills User Story #10: "As a user, I want to edit my reviews so I have the freedom to change my mind about my reviews."
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This also fulfills User Story #11: "As a user, I want to delete my movie reviews so I have the freedom to change my mind about my reviews."
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold font-heading text-primary mb-6">
+              Administrator Backend
+            </h3>
+            <p className="text-foreground mb-4">
+              A secure and powerful backend provides full administrative control over the application's data.
+            </p>
+            
+            <Card className="shadow-card">
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-accent mb-2">Django Admin Panel</h4>
+                <p className="text-muted-foreground mb-3">
+                  This single, comprehensive interface allows a logged-in administrator to perform all necessary management tasks to keep the site's information up to date.
+                </p>
+                <div className="space-y-2">
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #17: "As an administrator, I want to be able to manage (view, create, update, or delete) users..."
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #18: "As an administrator, I want to be able to manage (view, create, update, or delete) movies..."
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #19: "As an administrator, I want to be able to manage (view, create, update, or delete) reviews..."
+                  </p>
+                  <p className="text-sm text-primary font-medium">
+                    This fulfills User Story #20: "As an administrator, I want to be able to manage (view, create, update, or delete) orders..."
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
 
         {/* Screenshots Gallery */}
@@ -359,10 +509,24 @@ const Index = () => {
             <p className="text-lg text-muted-foreground mb-6">
               Want to see the code behind this project?
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Github className="mr-2 h-5 w-5" />
-              View on GitHub
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => window.open('https://github.com/DhruvVishalGupta/moviesstore', '_blank')}
+              >
+                <Github className="mr-2 h-5 w-5" />
+                View on GitHub
+              </Button>
+              <Button 
+                variant="outline"
+                size="lg"
+                onClick={() => window.open('https://dvgupta.pythonanywhere.com', '_blank')}
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Visit Live Site
+              </Button>
+            </div>
           </div>
         </div>
       </Section>
