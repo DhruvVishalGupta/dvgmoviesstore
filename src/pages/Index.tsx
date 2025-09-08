@@ -375,7 +375,7 @@ const Index = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="https://dvgupta.pythonanywhere.com" target="_blank" rel="noopener noreferrer">
+                <a href="http://dvgupta.pythonanywhere.com" target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="mr-2 h-5 w-5" />
                   Visit Live Site
                 </a>
