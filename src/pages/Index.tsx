@@ -38,7 +38,7 @@ const Index = () => {
               Dhruv Gupta
             </h1>
             <p className="text-xl md:text-2xl text-white/90 font-medium">
-              Computer Science Student at Georgia Institute of Technology
+              Computer Engineering Student at Georgia Institute of Technology
             </p>
             
             <div className="max-w-3xl mx-auto text-lg md:text-xl text-white/80 leading-relaxed space-y-4">
@@ -261,7 +261,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-4">
-              Development Process
+              Development Process (following the Textbook)
             </h2>
           </div>
 
