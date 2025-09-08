@@ -374,15 +374,13 @@ const Index = () => {
                   View on GitHub
                 </a>
               </Button>
-              <a 
-                href="https://dvgupta.pythonanywhere.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-3 text-sm font-medium border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md transition-colors"
-              >
-                <ExternalLink className="h-5 w-5" />
-                Visit Live Site
-              </a>
+              <div className="text-center">
+                <p className="text-muted-foreground mb-2">Visit Live Site:</p>
+                <p className="font-mono text-sm bg-muted px-3 py-2 rounded border">
+                  https://dvgupta.pythonanywhere.com
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">Copy and paste this link in your browser</p>
+              </div>
             </div>
           </div>
         </div>
