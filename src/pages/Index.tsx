@@ -379,7 +379,6 @@ const Index = () => {
                 <p className="font-mono text-sm bg-muted px-3 py-2 rounded border">
                   https://dvgupta.pythonanywhere.com
                 </p>
-                <p className="text-xs text-muted-foreground mt-1">Copy and paste this link in your browser</p>
               </div>
             </div>
           </div>
