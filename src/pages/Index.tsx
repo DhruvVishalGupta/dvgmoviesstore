@@ -47,7 +47,7 @@ const Index = () => {
                 My threads are Sys Arch and Distributed Systems. I'm interested in AI, robotics, and cloud computing.
               </p>
               <p>
-                This web portfolio is a showcase of one of my projeccts, the Movies Store web app made for CS2340. It is also to serve as a way to show my skills in web-development.
+                This web portfolio is a showcase of one of my projects, the GT Movies Store web app made for CS2340. It is also to serve as a way to show my skills in web-development.
               </p>
             </div>
                       </div>
@@ -67,14 +67,14 @@ const Index = () => {
       <Section id="gt-movies" variant="default">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-4">
-            Movies Store
+            GT Movies Store
           </h2>
         </div>
 
         <div className="mb-16">
           <div className="space-y-6 max-w-3xl mx-auto text-center">
             <p className="text-lg leading-relaxed text-foreground">
-              The Movies Store project is a full-stack web app made using Python and a Django 5 framework. The goal of the web-app is to
+              The GT Movies Store project is a full-stack web app made using Python and a Django 5 framework. The goal of the web-app is to
               act as an online platform where anyone can browse a set of movies, create and read reviews, and be able to purchase movies through a purchasing and shopping-cart system.
             </p>
             
