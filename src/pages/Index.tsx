@@ -38,7 +38,7 @@ const Index = () => {
               Dhruv Gupta
             </h1>
             <p className="text-xl md:text-2xl text-white/90 font-medium">
-              Computer Science Student at Georgia Institute of Technology
+              Computer Engineering Student at GaTech
             </p>
             
             <div className="max-w-3xl mx-auto text-lg md:text-xl text-white/80 leading-relaxed space-y-4">
@@ -47,7 +47,7 @@ const Index = () => {
                 My threads are Sys Arch and Distributed Systems. I'm interested in AI, robotics, and cloud computing.
               </p>
               <p>
-                This web portfolio is a showcase of one of my projeccts, the Movies Store web app made for CS2340. It is also to serve as a way to show my skills in web-development.
+                This web portfolio is a showcase of one of my projects, the Georgia TechMovies Store web app made for CS2340. It is also to serve as a way to show my skills in web-development.
               </p>
             </div>
                       </div>
@@ -72,7 +72,7 @@ const Index = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
-          <div className="space-y-6">
+          <div className="space-y-6 text-center max-w-3xl mx-auto">
             <p className="text-lg leading-relaxed text-foreground">
               The Movies Store project is a full-stack web app made using Python and a Django 5 framework. The goal of the web-app is to
               act as an online platform where anyone can browse a set of movies, create and read reviews, and be able to purchase movies through a purchasing and shopping-cart system.
@@ -98,25 +98,25 @@ const Index = () => {
                     <p className="text-muted-foreground mb-2">
                       The Homepage is the landing page for the user, while the About Page offers context for the website's purpose and usage.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #1: "As a user, I want to see information about the GT Movies Store so I can learn more about the app and its purpose."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Responsive GUI</h4>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-2 font-semibold">
                       The entire front end was built using the Bootstrap framework, this ensured that all the webpages were quick and responsive for a user.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #16: "As a user, I want the GT Movies Store to feature a responsive Graphical User Interface (GUI) so I can access it through different devices with diverse screen sizes."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Web Deployment</h4>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-2 font-semibold">
                       The application is deployed to a public web server on PythonAnywhere.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #15: "As a user, I want to be able to access the GT Movies Store from any desktop using a web browser, so I can use the app anywhere with an internet connection."
                     </p>
                   </div>
@@ -129,13 +129,13 @@ const Index = () => {
               <AccordionContent className="px-4">
                 <div className="space-y-2">
                   <h4 className="font-semibold text-accent">Signup & Login Pages</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground font-semibold">
                     The Signup Page allows new users to create an account. The Login Page allows registered users to authenticate, which lets them use features like purchasing and writing reviews.
                   </p>
-                  <p className="text-sm text-primary font-medium mt-2">
+                  <p className="text-sm text-primary font-light mt-2">
                     Fulfills User Story #2: "As a user, I want to register an account so that I can access the GT Movies Store."
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #3: "As a registered user, I want to log in so that I can access my account data."
                   </p>
                 </div>
@@ -148,25 +148,25 @@ const Index = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Movie Listings Page</h4>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-2 font-semibold">
                       This page functions as the main catalog, displaying all available movies from the database. It also has a search bar to filter the movies shown.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #4: "As a user, I want to be able to view the list of movies available in the GT Movies Store so I can make my selections."
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #5: "As a user, I want to search movies per title so I can make my selections."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Movie Detail Page</h4>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-2 font-semibold">
                       Clicking a movie from the catalog leads to its detail page. It has information about the film such as price, description, image and displays all reviews.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #13: "As a user, I want to see the details of a movie so I have the information to make my choices."
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #12: "As a user, I want to see the reviews of a movie so I can have information on whether I should purchase a movie or not."
                     </p>
                   </div>
@@ -180,25 +180,25 @@ const Index = () => {
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Shopping Cart</h4>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-2 font-semibold">
                       On the movie detail page, users can add items to their personal Shopping Cart. The Cart Page lists all items intended for purchase and their total price, and even includes a button to clear the cart.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #7: "As a user, I want to be able to add one or more items of a movie to my shopping cart so I can purchase them in the future."
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #6: "As a user, I want to be able to access a shopping cart so I can list all movie items I am willing to purchase."
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #9: "As a user, I want to be able to remove all movie items from my shopping cart so I can have flexibility on what I purchase or not."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Order History Page</h4>
-                    <p className="text-muted-foreground mb-2">
+                    <p className="text-muted-foreground mb-2 font-semibold">
                       For logged-in users, the "Orders" page provides a complete history of all past purchases, allowing them to track their expenses and previous selections.
                     </p>
-                    <p className="text-sm text-primary font-medium">
+                    <p className="text-sm text-primary font-light">
                       Fulfills User Story #14: "As a user, I want to see a list of my orders so I can track what I have purchased and my expenses."
                     </p>
                   </div>
@@ -211,16 +211,16 @@ const Index = () => {
               <AccordionContent className="px-4">
                 <div className="space-y-2">
                   <h4 className="font-semibold text-accent">Review CRUD Operations</h4>
-                  <p className="text-muted-foreground mb-2">
+                  <p className="text-muted-foreground mb-2 font-semibold">
                     On the movie detail page, logged-in users can create reviews. For reviews they've given, they can edit and delete.
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #8: "As a user, I want to create movie reviews so others can use my insights when searching for movies."
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #10: "As a user, I want to edit my reviews so I have the freedom to change my mind about my reviews."
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #11: "As a user, I want to delete my movie reviews so I have the freedom to change my mind about my reviews."
                   </p>
                 </div>
@@ -232,19 +232,19 @@ const Index = () => {
               <AccordionContent className="px-4">
                 <div className="space-y-2">
                   <h4 className="font-semibold text-accent">Django Admin Panel</h4>
-                  <p className="text-muted-foreground mb-2">
+                  <p className="text-muted-foreground mb-2 font-semibold">
                     The administrator backend interface allows an administrator to manage users, movies, reviews, and orders.
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #17: "As an administrator, I want to be able to manage (view, create, update, or delete) users..."
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #18: "As an administrator, I want to be able to manage (view, create, update, or delete) movies..."
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #19: "As an administrator, I want to be able to manage (view, create, update, or delete) reviews..."
                   </p>
-                  <p className="text-sm text-primary font-medium">
+                  <p className="text-sm text-primary font-light">
                     Fulfills User Story #20: "As an administrator, I want to be able to manage (view, create, update, or delete) orders..."
                   </p>
                 </div>
@@ -286,7 +286,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-foreground leading-relaxed">
-                  To start prototypeing the movie catalog, I first built the movie list and detail 
+                  To start prototyping the movie catalog, I first built the movie list and detail 
                   pages using hard-coded mock data using dictionaries. This let me work on the front-end layout and URL routing without needing to set up the database yet.
                 </p>
               </CardContent>
@@ -325,8 +325,8 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-foreground leading-relaxed">
-                  My main resource for navigating challenges was the textbook and ChatGPT. When I encountered a concept 
-                  that needed more depth—such as customizing Django forms I used official Django documentation. For some situations, asking a peer in the class was helpful as well.
+                  My main resource for navigating challenges was the textbook and ChatGPT. When I came across a concept 
+                  that needed more depth, like customizing Django forms I used official Django documentation. For some situations, asking a peer in the class was helpful as well.
                 </p>
               </CardContent>
             </Card>
