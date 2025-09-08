@@ -391,12 +391,6 @@ const Index = () => {
       <footer className="bg-primary text-primary-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold font-heading mb-4">Dhruv Gupta</h3>
-          <p className="text-primary-foreground/80 mb-6">
-            Computer Science Student | Georgia Institute of Technology
-          </p>
-          <p className="text-primary-foreground/60 text-sm">
-            Built with React, TypeScript, and Tailwind CSS
-          </p>
         </div>
       </footer>
     </div>
