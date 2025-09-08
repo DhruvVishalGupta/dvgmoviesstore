@@ -374,11 +374,16 @@ const Index = () => {
                   View on GitHub
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <a href="https://dvgupta.pythonanywhere.com" target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-2 h-5 w-5" />
-                  Visit Live Site
-                </a>
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => {
+                  const newWindow = window.open('https://dvgupta.pythonanywhere.com', '_blank', 'noopener,noreferrer');
+                  if (newWindow) newWindow.focus();
+                }}
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Visit Live Site
               </Button>
             </div>
           </div>
