@@ -361,7 +361,6 @@ const Index = () => {
           
           <div className="mt-12 text-center">
             <p className="text-lg text-muted-foreground mb-6">
-              Want to see the code behind this project?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
