@@ -342,23 +342,19 @@ const Index = () => {
           </h2>
           
           <Card className="shadow-card">
-            <CardContent className="p-8">
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <Play className="w-16 h-16 text-accent mx-auto" />
-                  <h3 className="text-xl font-semibold text-foreground">
-                    Video Demo Placeholder
-                  </h3>
-                  <p className="text-muted-foreground max-w-md">
-                    This section is ready for your YouTube or Vimeo video embed. 
-                    The responsive container will perfectly showcase your Django 
-                    application demo with optimal video and audio quality.
-                  </p>
-                  <Button variant="outline" className="mt-4">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Add Video Link
-                  </Button>
-                </div>
+            <CardContent className="p-4">
+              <div className="aspect-video rounded-lg overflow-hidden">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://www.youtube.com/embed/1w_rGkPC144?si=iAt2iMhhYv0K2EWp" 
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerPolicy="strict-origin-when-cross-origin" 
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
