@@ -375,7 +375,6 @@ const Index = () => {
                 </a>
               </Button>
               <div className="text-center">
-                <p className="text-muted-foreground mb-2">Visit Live Site:</p>
                 <p className="font-mono text-sm bg-muted px-3 py-2 rounded border">
                   https://dvgupta.pythonanywhere.com
                 </p>
