@@ -368,21 +368,17 @@ const Index = () => {
               Want to see the code behind this project?
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90"
-                onClick={() => window.open('https://github.com/DhruvVishalGupta/moviesstore', '_blank')}
-              >
-                <Github className="mr-2 h-5 w-5" />
-                View on GitHub
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <a href="https://github.com/DhruvVishalGupta/moviesstore" target="_blank" rel="noopener noreferrer">
+                  <Github className="mr-2 h-5 w-5" />
+                  View on GitHub
+                </a>
               </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                onClick={() => window.open('https://dvgupta.pythonanywhere.com')}
-              >
-                <ExternalLink className="mr-2 h-5 w-5" />
-                Visit Live Site
+              <Button asChild variant="outline" size="lg">
+                <a href="https://dvgupta.pythonanywhere.com" target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  Visit Live Site
+                </a>
               </Button>
             </div>
           </div>
