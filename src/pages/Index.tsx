@@ -3,15 +3,12 @@ import { Header } from "@/components/Header";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Play, ChevronDown } from "lucide-react";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
-// Import generated images
 import profilePhoto from "@/assets/profile-photo.jpg";
-import moviesHomepage from "@/assets/movies-homepage.jpg";
-import movieDetails from "@/assets/movie-details.jpg.png";
-import shoppingCart from "@/assets/shopping-cart.png";
+// Import generated images
+// Note: Only profile photo is used on this page currently
 
 const Index = () => {
   const scrollToSection = (sectionId: string) => {
@@ -46,26 +43,14 @@ const Index = () => {
             
             <div className="max-w-3xl mx-auto text-lg md:text-xl text-white/80 leading-relaxed space-y-4">
               <p>
-                Hello! I'm a second-year Computer Science student at the Georgia Institute of Technology. 
-                I'm passionate about building elegant and efficient software solutions, with a particular 
-                interest in full-stack web development and cloud technologies.
+                Hello! I'm Dhruv Gupta, a second-year Computer Engineering student at Georgia Tech. 
+                My threads are Sys Arch and Distributed Systems. I'm interested in AI, robotics, and cloud computing.
               </p>
               <p>
-                This web portfolio serves as a showcase of my journey as a developer, highlighting key 
-                projects from my coursework and personal explorations. The project detailed here, the 
-                GT Movies Store, was a major assignment for my Objects and Design course (CS 2340) and 
-                represents a comprehensive application of my skills in Python, Django, and foundational 
-                web principles.
+                This web portfolio is a showcase of one of my projeccts, the Movies Store web app made for CS2340. It is also to serve as a way to show my skills in web-development.
               </p>
             </div>
-            
-            <div className="flex flex-wrap justify-center gap-4 pt-6">
-              <Badge variant="secondary" className="px-4 py-2 text-sm">Python</Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">Django</Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">Web Development</Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">Full-Stack</Badge>
-            </div>
-          </div>
+                      </div>
           
           <Button 
             variant="outline" 
@@ -82,85 +67,57 @@ const Index = () => {
       <Section id="gt-movies" variant="default">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-4">
-            GT Movies Store
+            Movies Store
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive Django web application for movie browsing, reviewing, and purchasing
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-foreground">
-              The GT Movies Store is a full-stack web application designed and developed using Python 
-              and the Django 5 framework. The primary goal of this application is to provide a seamless 
-              online platform where users can browse a catalog of movies, read and write reviews, and 
-              ultimately purchase movies through a persistent shopping cart system. 🛍️
+              The Movies Store project is a full-stack web app made using Python and a Django 5 framework. The goal of the web-app is to
+              act as an online platform where anyone can browse a set of movies, create and read reviews, and be able to purchase movies through a purchasing and shopping-cart system.
             </p>
             
             <p className="text-lg leading-relaxed text-foreground">
-              The application was built following the Model-View-Template (MVT) architecture, which 
-              separates the data models, business logic, and user interface into distinct, manageable 
-              components.
+              The application was built with MVT architecture, which helped to separate the different models, business logic, and the user interface into different, but still manageable, components.
             </p>
-            
-            <div className="flex flex-wrap gap-3">
-              <Badge className="bg-accent text-accent-foreground">Django 5</Badge>
-              <Badge className="bg-accent text-accent-foreground">Python</Badge>
-              <Badge className="bg-accent text-accent-foreground">Bootstrap</Badge>
-              <Badge className="bg-accent text-accent-foreground">SQLite</Badge>
-              <Badge className="bg-accent text-accent-foreground">MVT Architecture</Badge>
-            </div>
           </div>
           
-          <Card className="shadow-card">
-            <CardContent className="p-0">
-              <img 
-                src={moviesHomepage} 
-                alt="GT Movies Store Homepage - Movie catalog with search functionality"
-                className="w-full h-auto rounded-lg"
-              />
-            </CardContent>
-          </Card>
         </div>
 
         {/* Feature Breakdown */}
         <div className="space-y-6 mb-12">
           <h3 className="text-2xl font-bold font-heading text-primary">Feature Breakdown</h3>
-          <p className="text-muted-foreground">Explore detailed capabilities by expanding each category.</p>
           <Accordion type="multiple" className="rounded-lg border bg-card">
             <AccordionItem value="informational">
               <AccordionTrigger className="px-4">Informational Pages & Application-Wide Features</AccordionTrigger>
               <AccordionContent className="px-4">
-                <p className="text-foreground mb-4">
-                  The application provides a welcoming experience for new users and is built on a responsive, accessible foundation.
-                </p>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Homepage & About Page</h4>
                     <p className="text-muted-foreground mb-2">
-                      The Homepage serves as the main entry point, while the About Page offers a clear summary of the application's purpose and functionality.
+                      The Homepage is the landing page for the user, while the About Page offers context for the website's purpose and usage.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #1: "As a user, I want to see information about the GT Movies Store so I can learn more about the app and its purpose."
+                      Fulfills User Story #1: "As a user, I want to see information about the GT Movies Store so I can learn more about the app and its purpose."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Responsive GUI</h4>
                     <p className="text-muted-foreground mb-2">
-                      The entire front end was built using the Bootstrap framework, ensuring that all pages and features are fully responsive and provide an optimal viewing experience across a wide range of devices.
+                      The entire front end was built using the Bootstrap framework, this ensured that all the webpages were quick and responsive for a user.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #16: "As a user, I want the GT Movies Store to feature a responsive Graphical User Interface (GUI) so I can access it through different devices with diverse screen sizes."
+                      Fulfills User Story #16: "As a user, I want the GT Movies Store to feature a responsive Graphical User Interface (GUI) so I can access it through different devices with diverse screen sizes."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Web Deployment</h4>
                     <p className="text-muted-foreground mb-2">
-                      The application has been deployed to a public web server on PythonAnywhere.
+                      The application is deployed to a public web server on PythonAnywhere.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #15: "As a user, I want to be able to access the GT Movies Store from any desktop using a web browser, so I can use the app anywhere with an internet connection."
+                      Fulfills User Story #15: "As a user, I want to be able to access the GT Movies Store from any desktop using a web browser, so I can use the app anywhere with an internet connection."
                     </p>
                   </div>
                 </div>
@@ -170,49 +127,47 @@ const Index = () => {
             <AccordionItem value="auth">
               <AccordionTrigger className="px-4">User Authentication</AccordionTrigger>
               <AccordionContent className="px-4">
-                <p className="text-foreground mb-4">A complete authentication system handles user registration and access control.</p>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-accent">Signup & Login Pages</h4>
                   <p className="text-muted-foreground">
-                    The Signup Page allows new users to create an account. The Login Page allows registered users to securely authenticate, which in turn grants them access to personalized features like purchasing and writing reviews.
+                    The Signup Page allows new users to create an account. The Login Page allows registered users to authenticate, which lets them use features like purchasing and writing reviews.
                   </p>
                   <p className="text-sm text-primary font-medium mt-2">
-                    This fulfills User Story #2: "As a user, I want to register an account so that I can access the GT Movies Store."
+                    Fulfills User Story #2: "As a user, I want to register an account so that I can access the GT Movies Store."
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This also fulfills User Story #3: "As a registered user, I want to log in so that I can access my account data."
+                    Fulfills User Story #3: "As a registered user, I want to log in so that I can access my account data."
                   </p>
                 </div>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="catalog">
-              <AccordionTrigger className="px-4">Movie Catalog & Discovery</AccordionTrigger>
+              <AccordionTrigger className="px-4">Movie Catalog</AccordionTrigger>
               <AccordionContent className="px-4">
-                <p className="text-foreground mb-4">The core of the application is the user's ability to browse and learn about movies. 🎬</p>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Movie Listings Page</h4>
                     <p className="text-muted-foreground mb-2">
-                      This page functions as the main catalog, displaying all available movies from the database. It includes a prominent search bar that allows users to filter the catalog by movie title.
+                      This page functions as the main catalog, displaying all available movies from the database. It also has a search bar to filter the movies shown.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #4: "As a user, I want to be able to view the list of movies available in the GT Movies Store so I can make my selections."
+                      Fulfills User Story #4: "As a user, I want to be able to view the list of movies available in the GT Movies Store so I can make my selections."
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This also fulfills User Story #5: "As a user, I want to search movies per title so I can make my selections."
+                      Fulfills User Story #5: "As a user, I want to search movies per title so I can make my selections."
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-accent mb-1">Movie Detail Page</h4>
                     <p className="text-muted-foreground mb-2">
-                      Clicking a movie from the catalog leads to its detail page. This page presents comprehensive information about the film (price, description, image) and displays all user-submitted reviews.
+                      Clicking a movie from the catalog leads to its detail page. It has information about the film such as price, description, image and displays all reviews.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #13: "As a user, I want to see the details of a movie so I have the information to make my choices."
+                      Fulfills User Story #13: "As a user, I want to see the details of a movie so I have the information to make my choices."
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This also fulfills User Story #12: "As a user, I want to see the reviews of a movie so I can have information on whether I should purchase a movie or not."
+                      Fulfills User Story #12: "As a user, I want to see the reviews of a movie so I can have information on whether I should purchase a movie or not."
                     </p>
                   </div>
                 </div>
@@ -222,21 +177,20 @@ const Index = () => {
             <AccordionItem value="ecommerce">
               <AccordionTrigger className="px-4">E-commerce Workflow</AccordionTrigger>
               <AccordionContent className="px-4">
-                <p className="text-foreground mb-4">The application features a complete e-commerce experience, from cart management to purchase history.</p>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-accent mb-1">Shopping Cart Functionality</h4>
+                    <h4 className="font-semibold text-accent mb-1">Shopping Cart</h4>
                     <p className="text-muted-foreground mb-2">
-                      On the movie detail page, users can add items to their personal Shopping Cart. The dedicated Cart Page lists all selected items and their total price, and includes a button to clear the cart's contents.
+                      On the movie detail page, users can add items to their personal Shopping Cart. The Cart Page lists all items intended for purchase and their total price, and even includes a button to clear the cart.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #7: "As a user, I want to be able to add one or more items of a movie to my shopping cart so I can purchase them in the future."
+                      Fulfills User Story #7: "As a user, I want to be able to add one or more items of a movie to my shopping cart so I can purchase them in the future."
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This also fulfills User Story #6: "As a user, I want to be able to access a shopping cart so I can list all movie items I am willing to purchase."
+                      Fulfills User Story #6: "As a user, I want to be able to access a shopping cart so I can list all movie items I am willing to purchase."
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This also fulfills User Story #9: "As a user, I want to be able to remove all movie items from my shopping cart so I can have flexibility on what I purchase or not."
+                      Fulfills User Story #9: "As a user, I want to be able to remove all movie items from my shopping cart so I can have flexibility on what I purchase or not."
                     </p>
                   </div>
                   <div>
@@ -245,7 +199,7 @@ const Index = () => {
                       For logged-in users, the "Orders" page provides a complete history of all past purchases, allowing them to track their expenses and previous selections.
                     </p>
                     <p className="text-sm text-primary font-medium">
-                      This fulfills User Story #14: "As a user, I want to see a list of my orders so I can track what I have purchased and my expenses."
+                      Fulfills User Story #14: "As a user, I want to see a list of my orders so I can track what I have purchased and my expenses."
                     </p>
                   </div>
                 </div>
@@ -253,22 +207,21 @@ const Index = () => {
             </AccordionItem>
 
             <AccordionItem value="reviews">
-              <AccordionTrigger className="px-4">User Content Management (Reviews)</AccordionTrigger>
+              <AccordionTrigger className="px-4">Reviews</AccordionTrigger>
               <AccordionContent className="px-4">
-                <p className="text-foreground mb-4">Logged-in users can contribute their own content to the site through a full review management system.</p>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-accent">Review CRUD Operations</h4>
                   <p className="text-muted-foreground mb-2">
-                    On the movie detail page, authenticated users can create reviews using a dedicated form. For reviews they have personally written, "Edit" and "Delete" buttons are conditionally rendered, giving them full control over their content.
+                    On the movie detail page, logged-in users can create reviews. For reviews they've given, they can edit and delete.
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This fulfills User Story #8: "As a user, I want to create movie reviews so others can use my insights when searching for movies."
+                    Fulfills User Story #8: "As a user, I want to create movie reviews so others can use my insights when searching for movies."
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This also fulfills User Story #10: "As a user, I want to edit my reviews so I have the freedom to change my mind about my reviews."
+                    Fulfills User Story #10: "As a user, I want to edit my reviews so I have the freedom to change my mind about my reviews."
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This also fulfills User Story #11: "As a user, I want to delete my movie reviews so I have the freedom to change my mind about my reviews."
+                    Fulfills User Story #11: "As a user, I want to delete my movie reviews so I have the freedom to change my mind about my reviews."
                   </p>
                 </div>
               </AccordionContent>
@@ -277,23 +230,22 @@ const Index = () => {
             <AccordionItem value="admin">
               <AccordionTrigger className="px-4">Administrator Backend</AccordionTrigger>
               <AccordionContent className="px-4">
-                <p className="text-foreground mb-4">A secure and powerful backend provides full administrative control over the application's data.</p>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-accent">Django Admin Panel</h4>
                   <p className="text-muted-foreground mb-2">
-                    This single, comprehensive interface allows a logged-in administrator to perform all necessary management tasks to keep the site's information up to date.
+                    The administrator backend interface allows an administrator to manage users, movies, reviews, and orders.
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This fulfills User Story #17: "As an administrator, I want to be able to manage (view, create, update, or delete) users..."
+                    Fulfills User Story #17: "As an administrator, I want to be able to manage (view, create, update, or delete) users..."
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This fulfills User Story #18: "As an administrator, I want to be able to manage (view, create, update, or delete) movies..."
+                    Fulfills User Story #18: "As an administrator, I want to be able to manage (view, create, update, or delete) movies..."
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This fulfills User Story #19: "As an administrator, I want to be able to manage (view, create, update, or delete) reviews..."
+                    Fulfills User Story #19: "As an administrator, I want to be able to manage (view, create, update, or delete) reviews..."
                   </p>
                   <p className="text-sm text-primary font-medium">
-                    This fulfills User Story #20: "As an administrator, I want to be able to manage (view, create, update, or delete) orders..."
+                    Fulfills User Story #20: "As an administrator, I want to be able to manage (view, create, update, or delete) orders..."
                   </p>
                 </div>
               </AccordionContent>
@@ -301,34 +253,7 @@ const Index = () => {
           </Accordion>
         </div>
 
-        {/* Screenshots Gallery */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <Card className="shadow-card">
-            <CardHeader>
-              <CardTitle className="text-center">Movie Details & Reviews</CardTitle>
-            </CardHeader>
-            <CardContent className="p-4">
-              <img 
-                src={movieDetails} 
-                alt="Movie detail page showing reviews and purchase options"
-                className="w-full h-auto rounded-lg"
-              />
-            </CardContent>
-          </Card>
-          
-          <Card className="shadow-card">
-            <CardHeader>
-              <CardTitle className="text-center">Shopping Cart Interface</CardTitle>
-            </CardHeader>
-            <CardContent className="p-4">
-              <img 
-                src={shoppingCart} 
-                alt="Shopping cart page with selected items and total"
-                className="w-full h-auto rounded-lg"
-              />
-            </CardContent>
-          </Card>
-        </div>
+
       </Section>
 
       {/* Process Description */}
@@ -338,9 +263,6 @@ const Index = () => {
             <h2 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-4">
               Development Process
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Iterative development approach following Django best practices
-            </p>
           </div>
 
           <div className="space-y-8">
@@ -351,24 +273,21 @@ const Index = () => {
               <CardContent>
                 <p className="text-foreground leading-relaxed">
                   I began by setting up my Python virtual environment and installing Django. 
-                  My initial focus was on creating the basic project structure, configuring 
-                  the settings, and building the static informational pages (Home and About). 
-                  This phase established the base template and static file handling that would 
-                  be used throughout the project.
+                  At first, I wokred on creating the project structure, configuring 
+                  the settings, and building the static home and about pages. 
+                  This phase was important because it set up parts of the project that would be used throughout the project.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle className="text-accent">Building the Core with Dummy Data</CardTitle>
+                <CardTitle className="text-accent">Mock Data</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground leading-relaxed">
-                  To quickly prototype the movie catalog, I first built the movie list and detail 
-                  pages using hard-coded "dummy data" (a Python list of dictionaries). This allowed 
-                  me to focus on the front-end layout and URL routing without immediate database 
-                  complexity.
+                  To start prototypeing the movie catalog, I first built the movie list and detail 
+                  pages using hard-coded mock data using dictionaries. This let me work on the front-end layout and URL routing without needing to set up the database yet.
                 </p>
               </CardContent>
             </Card>
@@ -380,24 +299,21 @@ const Index = () => {
               <CardContent>
                 <p className="text-foreground leading-relaxed">
                   With the front end established, I created the Movie model. I then used Django's 
-                  migration system (makemigrations and migrate) to translate that model into a 
-                  database table. I refactored the views to query the database using the Django 
-                  QuerySet API, replacing the dummy data with dynamic content. I used the admin 
-                  panel extensively during this phase to populate the database with movie information.
+                  migration system (makemigrations and migrate) to turn that model into a 
+                  database table. I restructured the views to query the database using the Django 
+                  QuerySet API, using dynamic data instead of the hard-coded mock data. I also used the admin panel to add movies to the database.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="shadow-card">
               <CardHeader>
-                <CardTitle className="text-accent">Implementing User Features</CardTitle>
+                <CardTitle className="text-accent">Adding User Features</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground leading-relaxed">
-                  Once the core content was database-driven, I shifted focus to user interaction. 
-                  I built the accounts app for authentication, followed by the review system. 
-                  The shopping cart was a key challenge, which I solved by using Django's session 
-                  framework to temporarily store cart data for each user. Finally, I created the 
+                  Once the everything was database-driven, I started working on user interaction. 
+                  I made the accounts app for authentication and then the review system and shopping cart. Finally, I created the 
                   Order and Item models to permanently save purchase information.
                 </p>
               </CardContent>
@@ -405,20 +321,12 @@ const Index = () => {
 
             <Card className="shadow-card bg-accent/10 border-accent/20">
               <CardHeader>
-                <CardTitle className="text-accent">Navigating Questions and Doubts 🤔</CardTitle>
+                <CardTitle className="text-accent">Navigating Questions</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-foreground leading-relaxed">
-                  My primary resource for navigating challenges was a combination of the course 
-                  textbook and the official Django documentation. When I encountered a concept 
-                  that needed more depth—such as customizing Django forms or understanding specific 
-                  QuerySet lookups like <code className="bg-muted px-2 py-1 rounded text-sm">id__in</code>—I 
-                  turned to the official documentation, which I found to be an authoritative and 
-                  comprehensive resource. For debugging, Django's detailed error pages (with 
-                  <code className="bg-muted px-2 py-1 rounded text-sm">DEBUG = True</code>) were 
-                  invaluable. By carefully reading the tracebacks, I could quickly identify the 
-                  source of an error, whether it was a logic issue in a view or a syntax error 
-                  in a template.
+                  My main resource for navigating challenges was the textbook and ChatGPT. When I encountered a concept 
+                  that needed more depth—such as customizing Django forms I used official Django documentation. For some situations, asking a peer in the class was helpful as well.
                 </p>
               </CardContent>
             </Card>
@@ -432,9 +340,6 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-primary mb-4">
             Video Demonstration
           </h2>
-          <p className="text-xl text-muted-foreground mb-12">
-            Watch a comprehensive walkthrough of the GT Movies Store application
-          </p>
           
           <Card className="shadow-card">
             <CardContent className="p-8">
