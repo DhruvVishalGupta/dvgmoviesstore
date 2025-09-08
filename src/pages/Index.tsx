@@ -379,7 +379,7 @@ const Index = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                onClick={() => window.open('https://dvgupta.pythonanywhere.com', '_blank')}
+                onClick={() => window.open('https://dvgupta.pythonanywhere.com')}
               >
                 <ExternalLink className="mr-2 h-5 w-5" />
                 Visit Live Site
